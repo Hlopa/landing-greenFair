@@ -1,0 +1,143 @@
+.features__inner {
+  padding: 115px 0px;
+  text-align: center;
+}
+
+
+.features__text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  max-width: 680px;
+  margin: 0 auto 60px auto;
+}
+
+.features__items-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature__item {
+  max-width: 270px;
+  padding: 0px 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  align-items: center;
+}
+
+.feature__item-icon::before {
+  position: absolute;
+  color: #c4c4c4;
+  font-size: 45px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feature__item-icon {
+  transition: all 0.3s;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #c4c4c4;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.feature__item-title {
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.feature__item-text {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.feature__item:hover {
+  .feature__item-icon {
+    background-color: $basic-green;
+    border: 1px solid $basic-green;
+  }
+  .feature__item-icon::before {
+    color: #fff;
+  }
+  .feature__item-title {
+    color: $basic-green;
+  }
+}
+
+//====================Адаптив===============//
+
+@media (max-width: 1115px) {
+  .features__items-list {
+    justify-content: center;
+  }
+
+  .feature__item {
+    max-width: 40%;
+    width: 100%;
+    min-height: 250px;
+  }
+  .feature__item-text {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 860px) {
+  .feature__item {
+    max-width: 100%;
+    min-height: 220px;
+  }
+  .feature__item-text {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .features__text {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .features__inner {
+    padding: 50px 0px;
+  }
+ 
+  .features__text {
+    max-width: 90%;
+  }
+  .feature__item-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    &::before {
+      font-size: 30px;
+    }
+  }
+  .feature__item-text {
+    font-size: 13px;
+    max-width: 100%;
+  }
+  .feature__item {
+    min-height: fit-content;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 390px) {
+  .features__inner {
+    padding: 30px 0px;
+  }
+ 
+  .features__text {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}

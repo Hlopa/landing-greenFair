@@ -1,0 +1,102 @@
+.reserved{
+    background: linear-gradient(
+      180deg,
+      rgba(22, 39, 22, 0.5) 0%,
+     rgba(19, 32, 14, 0.7) 100%
+    ),
+    url(../images/reserved.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;          
+}
+
+
+.reserved__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+}
+
+.reserved__text{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    font-size: 31px;
+}
+
+
+.reserved__btn{
+    border: none;
+    padding: 11px 34px;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    font-size: 17px;
+}
+
+
+
+
+.test{
+    height: 800px;
+}
+
+
+@media(max-width: 890px){
+.reserved__inner{
+    min-height: 137px;
+}
+
+    .reserved__text {
+    font-size: 25px
+}
+
+.reserved__btn {
+    padding: 11px 28px;
+    font-size: 15px;
+}
+
+}
+
+
+@media(max-width: 719px){
+
+    
+    .reserved__text {
+        flex: 0 1 50%;
+        font-size: 17px;
+        margin-right: 20px;
+}
+
+
+.reserved__btn {
+    flex: 0 1 50%;
+    padding: 11px 21px
+}
+}
+
+
+
+@media(max-width: 400px){
+    .reserved__inner{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .reserved__text {
+        flex: 0 1 50%;
+        font-size: 15px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+}
+
+
+.reserved__btn {
+    flex: 0 1 50%;
+    padding: 9px 13px;
+    font-size: 12px;
+}
+}

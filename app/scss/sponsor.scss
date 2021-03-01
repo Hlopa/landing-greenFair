@@ -1,0 +1,54 @@
+.sponsor__inner{
+    padding: 79px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  
+  .sponsor__item{
+    flex-basis: 19%;
+  }
+  
+  .sponsor__item-img{
+    height: auto;
+    width: 100%;
+  }
+  
+  
+  @media(max-width: 1210px){
+  .sponsor__inner{
+    justify-content: space-around;
+  }
+    .sponsor__item{
+     flex-basis: 17%;
+    }
+  
+  }
+  
+  
+  @media(max-width: 868px){
+    .sponsor__inner{
+      padding: 50px 0px;}
+  }
+  
+  
+  @media(max-width: 624px){
+    .sponsor__inner{
+      padding: 30px 0px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .sponsor__item{
+      flex-basis: 25%;
+        margin: 5px 20px;
+     }
+  }
+  
+  
+  @media(max-width: 411px){
+    .sponsor__item{
+      flex-basis: 40%;
+        margin: 5px 8px;
+     }
+  }
